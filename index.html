@@ -61,13 +61,13 @@
       font-size: 16px;
     }
 
-    .apps, .links {
+    .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 30px;
     }
 
-    .app-card, .link-card {
+    .card {
       background: #fff;
       border-radius: 14px;
       padding: 25px;
@@ -76,7 +76,7 @@
       text-align: center;
     }
 
-    .app-card:hover, .link-card:hover {
+    .card:hover {
       transform: translateY(-6px);
       box-shadow: 0 18px 36px rgba(0,0,0,0.12);
     }
@@ -93,18 +93,18 @@
       margin: 0 auto 15px;
     }
 
-    .app-card h3, .link-card h3 {
+    .card h3 {
       font-size: 22px;
       margin: 10px 0;
     }
 
-    .app-card p, .link-card p {
+    .card p {
       font-size: 15px;
       color: #555;
       line-height: 1.6;
     }
 
-    .play-btn {
+    .btn {
       display: inline-block;
       margin-top: 18px;
       padding: 11px 20px;
@@ -116,7 +116,7 @@
       font-size: 14px;
     }
 
-    .play-btn:hover {
+    .btn:hover {
       background: #1558b0;
     }
 
@@ -148,81 +148,117 @@
   </div>
 </header>
 
-<!-- Apps Section -->
+<!-- Apps -->
 <section class="section">
   <h2>Our Apps</h2>
   <p class="subtitle">Available on Google Play</p>
 
-  <div class="apps">
-    <div class="app-card">
+  <div class="grid">
+    <div class="card">
       <div class="icon">📅</div>
       <h3>Holiday Calendar 2026</h3>
       <p>Complete holiday calendar with festivals and public holidays.</p>
-      <a class="play-btn" href="https://play.google.com/store/apps/details?id=com.apps.calendarnew" target="_blank">View on Google Play</a>
+      <a class="btn" href="https://play.google.com/store/apps/details?id=com.apps.calendarnew" target="_blank">View on Google Play</a>
     </div>
 
-    <div class="app-card">
+    <div class="card">
       <div class="icon">🗓️</div>
       <h3>Holiday Calendar</h3>
       <p>Simple and offline holiday calendar for everyday use.</p>
-      <a class="play-btn" href="https://play.google.com/store/apps/details?id=com.apps.calendar" target="_blank">View on Google Play</a>
+      <a class="btn" href="https://play.google.com/store/apps/details?id=com.apps.calendar" target="_blank">View on Google Play</a>
     </div>
 
-    <div class="app-card">
+    <div class="card">
       <div class="icon">🇮🇳</div>
       <h3>Hindi Calendar</h3>
       <p>Hindi calendar with Indian festivals and holidays.</p>
-      <a class="play-btn" href="https://play.google.com/store/apps/details?id=com.apps.calendarhin" target="_blank">View on Google Play</a>
+      <a class="btn" href="https://play.google.com/store/apps/details?id=com.apps.calendarhin" target="_blank">View on Google Play</a>
     </div>
 
-    <div class="app-card">
+    <div class="card">
       <div class="icon">📆</div>
       <h3>India Holiday Calendar</h3>
       <p>National and regional Indian holidays in one app.</p>
-      <a class="play-btn" href="https://play.google.com/store/apps/details?id=com.apps.indiacalendar" target="_blank">View on Google Play</a>
+      <a class="btn" href="https://play.google.com/store/apps/details?id=com.apps.indiacalendar" target="_blank">View on Google Play</a>
     </div>
 
-    <div class="app-card">
+    <div class="card">
       <div class="icon">🇺🇸</div>
       <h3>USA Holiday Calendar</h3>
       <p>US federal and public holidays calendar.</p>
-      <a class="play-btn" href="https://play.google.com/store/apps/details?id=com.apps.usacalendar" target="_blank">View on Google Play</a>
+      <a class="btn" href="https://play.google.com/store/apps/details?id=com.apps.usacalendar" target="_blank">View on Google Play</a>
     </div>
   </div>
 </section>
 
-<!-- Holiday Resources -->
+<!-- Holiday & Festival Links -->
 <section class="section">
   <h2>Holiday & Festival Resources</h2>
-  <p class="subtitle">Helpful links for vacations, festivals, and planning</p>
+  <p class="subtitle">Vacation planning and festival references</p>
 
-  <div class="links">
-    <div class="link-card">
+  <div class="grid">
+    <div class="card">
       <div class="icon">🇮🇳</div>
       <h3>Indian Holidays</h3>
-      <p>Official list of Indian public holidays and festivals.</p>
-      <a class="play-btn" href="https://www.india.gov.in/calendar" target="_blank">Visit Website</a>
+      <p>Official Indian public holidays and festivals.</p>
+      <a class="btn" href="https://www.india.gov.in/calendar" target="_blank">Visit</a>
     </div>
 
-    <div class="link-card">
+    <div class="card">
       <div class="icon">🇺🇸</div>
       <h3>US Federal Holidays</h3>
-      <p>US government federal holidays and observances.</p>
-      <a class="play-btn" href="https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/" target="_blank">Visit Website</a>
+      <p>United States federal holidays.</p>
+      <a class="btn" href="https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/" target="_blank">Visit</a>
     </div>
 
-    <div class="link-card">
+    <div class="card">
       <div class="icon">🎉</div>
       <h3>World Festivals</h3>
-      <p>Major festivals celebrated across the world.</p>
-      <a class="play-btn" href="https://www.timeanddate.com/holidays/" target="_blank">Visit Website</a>
+      <p>Festivals and observances worldwide.</p>
+      <a class="btn" href="https://www.timeanddate.com/holidays/" target="_blank">Visit</a>
     </div>
 
-    <div class="link-card">
+    <div class="card">
       <div class="icon">✈️</div>
       <h3>Vacation Planning</h3>
-      <p>Plan vacations around holidays and long weekends.</p>
-      <a class="play-btn" href="https://www.makemytrip.com/holidays-india/" target="_blank">Visit Website</a>
+      <p>Plan trips around holidays and long weekends.</p>
+      <a class="btn" href="https://www.makemytrip.com/holidays-india/" target="_blank">Visit</a>
+    </div>
+  </div>
+</section>
+
+<!-- Developer Links -->
+<section class="section">
+  <h2>Developer Resources</h2>
+  <p class="subtitle">Official Android & Google platforms</p>
+
+  <div class="grid">
+    <div class="card">
+      <div class="icon">▶️</div>
+      <h3>Google Play Developer</h3>
+      <p>View all our published Android apps.</p>
+      <a class="btn" href="https://play.google.com/store/apps/developer?id=Hansraj+Choudhary" target="_blank">Open</a>
+    </div>
+
+    <div class="card">
+      <div class="icon">🤖</div>
+      <h3>Android Developers</h3>
+      <p>Official Android development documentation.</p>
+      <a class="btn" href="https://developer.android.com" target="_blank">Open</a>
+    </div>
+
+    <div class="card">
+      <div class="icon">💰</div>
+      <h3>Google AdMob</h3>
+      <p>Monetization platform for Android apps.</p>
+      <a class="btn" href="https://admob.google.com" target="_blank">Open</a>
+    </div>
+
+    <div class="card">
+      <div class="icon">📱</div>
+      <h3>Google Play Store</h3>
+      <p>Explore millions of Android apps.</p>
+      <a class="btn" href="https://play.google.com/store" target="_blank">Open</a>
     </div>
   </div>
 </section>
@@ -238,9 +274,8 @@
 
 <script>
   function updateClock() {
-    const now = new Date();
     document.getElementById("clock").textContent =
-      now.toLocaleTimeString();
+      new Date().toLocaleTimeString();
   }
   updateClock();
   setInterval(updateClock, 1000);
