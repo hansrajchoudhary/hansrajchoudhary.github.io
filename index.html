@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>Hansraj Choudhary – Android Apps</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Official website for Android apps by Hansraj Choudhary. Download Holiday and Calendar apps from Google Play." />
+  <meta name="description" content="Official website for Android calendar and holiday apps by Hansraj Choudhary." />
 
   <style>
     body {
@@ -33,20 +33,13 @@
       opacity: 0.95;
     }
 
-    .widgets {
-      display: flex;
-      justify-content: center;
-      gap: 25px;
-      flex-wrap: wrap;
-      margin-top: 30px;
-      font-size: 15px;
-    }
-
-    .widget-box {
+    .clock-box {
+      margin-top: 25px;
+      display: inline-block;
       background: rgba(255,255,255,0.15);
-      padding: 12px 18px;
+      padding: 12px 20px;
       border-radius: 8px;
-      min-width: 160px;
+      font-size: 15px;
     }
 
     .section {
@@ -68,13 +61,13 @@
       font-size: 16px;
     }
 
-    .apps {
+    .apps, .links {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 30px;
     }
 
-    .app-card {
+    .app-card, .link-card {
       background: #fff;
       border-radius: 14px;
       padding: 25px;
@@ -83,7 +76,7 @@
       text-align: center;
     }
 
-    .app-card:hover {
+    .app-card:hover, .link-card:hover {
       transform: translateY(-6px);
       box-shadow: 0 18px 36px rgba(0,0,0,0.12);
     }
@@ -100,12 +93,12 @@
       margin: 0 auto 15px;
     }
 
-    .app-card h3 {
+    .app-card h3, .link-card h3 {
       font-size: 22px;
       margin: 10px 0;
     }
 
-    .app-card p {
+    .app-card p, .link-card p {
       font-size: 15px;
       color: #555;
       line-height: 1.6;
@@ -125,35 +118,6 @@
 
     .play-btn:hover {
       background: #1558b0;
-    }
-
-    .links {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      flex-wrap: wrap;
-      margin-top: 40px;
-    }
-
-    .link-card {
-      background: #fff;
-      padding: 20px;
-      border-radius: 12px;
-      width: 220px;
-      text-align: center;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-    }
-
-    .link-card span {
-      font-size: 36px;
-    }
-
-    .link-card a {
-      display: block;
-      margin-top: 10px;
-      text-decoration: none;
-      font-weight: 600;
-      color: #1a73e8;
     }
 
     footer {
@@ -179,22 +143,17 @@
   <h1>Android Apps by Hansraj Choudhary</h1>
   <p>Simple, reliable calendar & holiday apps trusted by users worldwide.</p>
 
-  <div class="widgets">
-    <div class="widget-box">
-      👁️ Visitors: <span id="visitCount">—</span>
-    </div>
-    <div class="widget-box">
-      🕒 Time: <span id="clock">—</span>
-    </div>
+  <div class="clock-box">
+    🕒 Local Time: <span id="clock">—</span>
   </div>
 </header>
 
+<!-- Apps Section -->
 <section class="section">
   <h2>Our Apps</h2>
   <p class="subtitle">Available on Google Play</p>
 
   <div class="apps">
-
     <div class="app-card">
       <div class="icon">📅</div>
       <h3>Holiday Calendar 2026</h3>
@@ -229,46 +188,55 @@
       <p>US federal and public holidays calendar.</p>
       <a class="play-btn" href="https://play.google.com/store/apps/details?id=com.apps.usacalendar" target="_blank">View on Google Play</a>
     </div>
-
   </div>
 </section>
 
+<!-- Holiday Resources -->
 <section class="section">
-  <h2>Useful Links</h2>
-  <p class="subtitle">Resources & platforms we trust</p>
+  <h2>Holiday & Festival Resources</h2>
+  <p class="subtitle">Helpful links for vacations, festivals, and planning</p>
 
   <div class="links">
     <div class="link-card">
-      <span>▶️</span>
-      <a href="https://play.google.com/store/apps/developer?id=Hansraj+Choudhary" target="_blank">Google Play Developer</a>
+      <div class="icon">🇮🇳</div>
+      <h3>Indian Holidays</h3>
+      <p>Official list of Indian public holidays and festivals.</p>
+      <a class="play-btn" href="https://www.india.gov.in/calendar" target="_blank">Visit Website</a>
     </div>
+
     <div class="link-card">
-      <span>📱</span>
-      <a href="https://play.google.com/store" target="_blank">Google Play Store</a>
+      <div class="icon">🇺🇸</div>
+      <h3>US Federal Holidays</h3>
+      <p>US government federal holidays and observances.</p>
+      <a class="play-btn" href="https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/" target="_blank">Visit Website</a>
     </div>
+
     <div class="link-card">
-      <span>🤖</span>
-      <a href="https://developer.android.com" target="_blank">Android Developers</a>
+      <div class="icon">🎉</div>
+      <h3>World Festivals</h3>
+      <p>Major festivals celebrated across the world.</p>
+      <a class="play-btn" href="https://www.timeanddate.com/holidays/" target="_blank">Visit Website</a>
     </div>
+
     <div class="link-card">
-      <span>💰</span>
-      <a href="https://admob.google.com" target="_blank">Google AdMob</a>
+      <div class="icon">✈️</div>
+      <h3>Vacation Planning</h3>
+      <p>Plan vacations around holidays and long weekends.</p>
+      <a class="play-btn" href="https://www.makemytrip.com/holidays-india/" target="_blank">Visit Website</a>
     </div>
   </div>
 </section>
 
 <footer>
-  <p>© 2026 Hansraj Choudhary · Built with ❤️ for Android</p>
+  <p>
+    © 2026 Hansraj Choudhary ·
+    <a href="https://play.google.com/store/apps/developer?id=Hansraj+Choudhary" target="_blank">
+      Google Play Developer Page
+    </a>
+  </p>
 </footer>
 
 <script>
-  // Visit counter (local, privacy-safe)
-  let visits = localStorage.getItem("visits") || 0;
-  visits++;
-  localStorage.setItem("visits", visits);
-  document.getElementById("visitCount").textContent = visits;
-
-  // Live clock
   function updateClock() {
     const now = new Date();
     document.getElementById("clock").textContent =
