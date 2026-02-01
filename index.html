@@ -33,6 +33,22 @@
       opacity: 0.95;
     }
 
+    .widgets {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      font-size: 15px;
+    }
+
+    .widget-box {
+      background: rgba(255,255,255,0.15);
+      padding: 12px 18px;
+      border-radius: 8px;
+      min-width: 160px;
+    }
+
     .section {
       max-width: 1200px;
       margin: 60px auto;
@@ -82,8 +98,6 @@
       justify-content: center;
       font-size: 40px;
       margin: 0 auto 15px;
-      color: #1a73e8;
-      font-weight: bold;
     }
 
     .app-card h3 {
@@ -113,18 +127,33 @@
       background: #1558b0;
     }
 
-    .trust {
-      background: #ffffff;
-      padding: 60px 20px;
-      text-align: center;
+    .links {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 40px;
     }
 
-    .trust p {
-      max-width: 800px;
-      margin: auto;
-      font-size: 16px;
-      color: #555;
-      line-height: 1.7;
+    .link-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      width: 220px;
+      text-align: center;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+
+    .link-card span {
+      font-size: 36px;
+    }
+
+    .link-card a {
+      display: block;
+      margin-top: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      color: #1a73e8;
     }
 
     footer {
@@ -133,6 +162,7 @@
       text-align: center;
       padding: 35px 20px;
       font-size: 14px;
+      margin-top: 60px;
     }
 
     footer a {
@@ -147,10 +177,16 @@
 
 <header>
   <h1>Android Apps by Hansraj Choudhary</h1>
-  <p>
-    Simple, useful, and reliable calendar & holiday apps designed for everyday use.
-    Trusted by users across India and the USA.
-  </p>
+  <p>Simple, reliable calendar & holiday apps trusted by users worldwide.</p>
+
+  <div class="widgets">
+    <div class="widget-box">
+      👁️ Visitors: <span id="visitCount">—</span>
+    </div>
+    <div class="widget-box">
+      🕒 Time: <span id="clock">—</span>
+    </div>
+  </div>
 </header>
 
 <section class="section">
@@ -162,83 +198,85 @@
     <div class="app-card">
       <div class="icon">📅</div>
       <h3>Holiday Calendar 2026</h3>
-      <p>
-        A complete holiday calendar app with clear monthly views,
-        festivals, and public holidays.
-      </p>
-      <a class="play-btn" href="https://play.google.com/store/apps/details?id=com.apps.calendarnew" target="_blank">
-        View on Google Play
-      </a>
+      <p>Complete holiday calendar with festivals and public holidays.</p>
+      <a class="play-btn" href="https://play.google.com/store/apps/details?id=com.apps.calendarnew" target="_blank">View on Google Play</a>
     </div>
 
     <div class="app-card">
       <div class="icon">🗓️</div>
       <h3>Holiday Calendar</h3>
-      <p>
-        Simple and easy-to-use holiday calendar with clean design
-        and offline access.
-      </p>
-      <a class="play-btn" href="https://play.google.com/store/apps/details?id=com.apps.calendar" target="_blank">
-        View on Google Play
-      </a>
+      <p>Simple and offline holiday calendar for everyday use.</p>
+      <a class="play-btn" href="https://play.google.com/store/apps/details?id=com.apps.calendar" target="_blank">View on Google Play</a>
     </div>
 
     <div class="app-card">
       <div class="icon">🇮🇳</div>
       <h3>Hindi Calendar</h3>
-      <p>
-        Hindi calendar app with Indian holidays, festivals,
-        and cultural events.
-      </p>
-      <a class="play-btn" href="https://play.google.com/store/apps/details?id=com.apps.calendarhin" target="_blank">
-        View on Google Play
-      </a>
+      <p>Hindi calendar with Indian festivals and holidays.</p>
+      <a class="play-btn" href="https://play.google.com/store/apps/details?id=com.apps.calendarhin" target="_blank">View on Google Play</a>
     </div>
 
     <div class="app-card">
       <div class="icon">📆</div>
       <h3>India Holiday Calendar</h3>
-      <p>
-        Indian holiday calendar including national and regional
-        holidays in a simple format.
-      </p>
-      <a class="play-btn" href="https://play.google.com/store/apps/details?id=com.apps.indiacalendar" target="_blank">
-        View on Google Play
-      </a>
+      <p>National and regional Indian holidays in one app.</p>
+      <a class="play-btn" href="https://play.google.com/store/apps/details?id=com.apps.indiacalendar" target="_blank">View on Google Play</a>
     </div>
 
     <div class="app-card">
       <div class="icon">🇺🇸</div>
       <h3>USA Holiday Calendar</h3>
-      <p>
-        US public holiday calendar with federal holidays
-        and easy monthly browsing.
-      </p>
-      <a class="play-btn" href="https://play.google.com/store/apps/details?id=com.apps.usacalendar" target="_blank">
-        View on Google Play
-      </a>
+      <p>US federal and public holidays calendar.</p>
+      <a class="play-btn" href="https://play.google.com/store/apps/details?id=com.apps.usacalendar" target="_blank">View on Google Play</a>
     </div>
 
   </div>
 </section>
 
-<section class="trust">
-  <h2>Why Choose Our Apps</h2>
-  <p>
-    Our apps are designed with a focus on simplicity, performance, and user trust.
-    We follow Google Play policies, respect user privacy, and continuously improve
-    based on feedback to deliver a smooth and reliable experience.
-  </p>
+<section class="section">
+  <h2>Useful Links</h2>
+  <p class="subtitle">Resources & platforms we trust</p>
+
+  <div class="links">
+    <div class="link-card">
+      <span>▶️</span>
+      <a href="https://play.google.com/store/apps/developer?id=Hansraj+Choudhary" target="_blank">Google Play Developer</a>
+    </div>
+    <div class="link-card">
+      <span>📱</span>
+      <a href="https://play.google.com/store" target="_blank">Google Play Store</a>
+    </div>
+    <div class="link-card">
+      <span>🤖</span>
+      <a href="https://developer.android.com" target="_blank">Android Developers</a>
+    </div>
+    <div class="link-card">
+      <span>💰</span>
+      <a href="https://admob.google.com" target="_blank">Google AdMob</a>
+    </div>
+  </div>
 </section>
 
 <footer>
-  <p>
-    © 2026 Hansraj Choudhary ·
-    <a href="https://play.google.com/store/apps/developer?id=Hansraj+Choudhary" target="_blank">
-      Google Play Developer Page
-    </a>
-  </p>
+  <p>© 2026 Hansraj Choudhary · Built with ❤️ for Android</p>
 </footer>
+
+<script>
+  // Visit counter (local, privacy-safe)
+  let visits = localStorage.getItem("visits") || 0;
+  visits++;
+  localStorage.setItem("visits", visits);
+  document.getElementById("visitCount").textContent = visits;
+
+  // Live clock
+  function updateClock() {
+    const now = new Date();
+    document.getElementById("clock").textContent =
+      now.toLocaleTimeString();
+  }
+  updateClock();
+  setInterval(updateClock, 1000);
+</script>
 
 </body>
 </html>
